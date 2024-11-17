@@ -1,0 +1,215 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    gap: 24px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu  li {
+    display: inline;
+    font-size: 14px;
+    color: #242426;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.nav-menu  a {
+    font-size: 12px;
+    color: #242426; /* Adjust text color */
+    text-decoration: none;
+    padding: 10px 0px;
+}
+
+.nav-menu  a:hover {
+    color: #fff; /* Hover effect */
+}
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: rgb(0, 0, 0);}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: bold;
+    color: #242426;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+@media (min-width: 768px) {
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        grid-template-areas:
+      "item1 item1"
+      "item2 item2"
+      "item3 item4"
+      "item5 item6";
+    }
+    .product-item:nth-child(1) { grid-area: item1; }
+    .product-item:nth-child(2) { grid-area: item2; }
+    .product-item:nth-child(3) { grid-area: item3; }
+    .product-item:nth-child(4) { grid-area: item4; }
+    .product-item:nth-child(5) { grid-area: item5; }
+    .product-item:nth-child(6) { grid-area: item6; }
+}
+
+@media (max-width: 767px) {
+    .product-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: block; /* Keeps it in the DOM, but transforms it off-screen */
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-100%); /* Move off-screen initially */
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    visibility: hidden; /* Hide by default */
+}
+
+.dropdown-menu.show {
+    transform: translateY(0); /* Slide in */
+    opacity: 1;
+    visibility: visible; /* Make it visible */
+}
+
+.dropdown-menu a {
+    display: block;
+    color: #242426;
+    padding: 12px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-menu ul {
+        display: none; /* Hide the default navigation */
+    }
+
+    .menu-button {
+        display: block; /* Show the hamburger button */
+    }
+}
+
+.text-box {
+    width: 150px;
+    background-color: #f0f0f0;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    padding: 20px;
+}
+
+.text-box.left {
+    margin-right: 20px;
+}
+
+.text-box.right {
+    margin-left: 20px;
+}
+
+img {
+    width: 700px;
+}
+
+
+#iphone {
+    font-weight: 500;
+    font-size: 6rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Begrenze die maximale Breite */
+    gap: 20px;
+}

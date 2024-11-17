@@ -1,0 +1,279 @@
+/* Grundstil */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Produktliste */
+.product-list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; /* Adjusts space between text and buttons */
+    padding: 1rem;
+}
+
+/* Darstellung für größere Bildschirme */
+@media (min-width: 768px) {
+    .product-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Drei Spalten */
+        gap: 1rem;
+    }
+}
+
+/* Darstellung für kleinere Bildschirme */
+@media (max-width: 767px) {
+    .product-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+img {
+    max-width: 100%; /* Images scale down with container */
+    height: auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    height: 45px;
+    padding: 0 20px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    gap: 24px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu  li {
+    display: inline;
+    font-size: 14px;
+    color: #242426;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.nav-menu  a {
+    font-size: 12px;
+    color: #242426; /* Adjust text color */
+    text-decoration: none;
+    padding: 10px 0px;
+}
+
+.nav-menu  a:hover {
+    color: #fff; /* Hover effect */
+}
+
+.product-list {
+    
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: bold;
+    display: grid;
+    gap: 1rem;
+}
+
+
+.product-item {
+    
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: bold;
+    color: #242426;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    flex: 1 1 calc(33.333% - 1rem);
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+@media (min-width: 768px) {
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        grid-template-areas:
+      "item1 item1"
+      "item2 item2"
+      "item3 item4"
+      "item5 item6";
+    }
+    .product-item:nth-child(1) { grid-area: item1; }
+    .product-item:nth-child(2) { grid-area: item2; }
+    .product-item:nth-child(3) { grid-area: item3; }
+    .product-item:nth-child(4) { grid-area: item4; }
+    .product-item:nth-child(5) { grid-area: item5; }
+    .product-item:nth-child(6) { grid-area: item6; }
+}
+
+@media (max-width: 767px) {
+    .product-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+img {
+    width: 700px;
+}
+
+.BuyButton {
+    background-color:#3876e0;
+    border-radius:27px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    padding:11px 31px;
+    text-decoration:none;
+}
+.BuyButton:hover {
+    background-color:#3874bd;
+}
+
+.LearnMore {
+    background-color:transparent;
+    border-radius:27px;
+    border:1px solid #2970db;
+    display:inline-block;
+    cursor:pointer;
+    font-size:17px;
+    padding:8px 20px;
+    color: #2970db;
+    text-decoration:none;
+    transition: all 0.5s;
+}
+.LearnMore:hover {
+    background-color: #2970db;
+    color: white;
+}
+
+
+
+
+#iphone {
+    font-weight: 500;
+    font-size: 6rem;
+}
+
+#IPad {
+    font-size: 6rem;
+    font-weight: 500;
+}
+
+#MacBook {
+    font-size: 6rem;
+    font-weight: 500;
+}
+
+#Apple_Watch {
+    font-size: 6rem;
+    font-weight: 500;
+}
+
+#Apple_TV {
+    font-size: 6rem;
+    font-weight: 500;
+}
+
+#AirPods {
+    font-size: 6rem;
+    font-weight: 500;
+}
+
+.Beschreibung {
+    margin-top: 0.5rem; /* Adds slight spacing below the title */
+    font-size: 30px;
+}
+
+.button-container {
+    display: inline-flex;
+    gap: 1rem; /* Adjusts the space between the buttons */
+    margin-top: 0.5rem; /* Optional: Add some spacing above the buttons */
+}
+
+.LearnMore,
+.BuyButton {
+    margin: 0;
+    padding: 8px 20px; /* Adjust padding as needed */
+}
+
+/* Hide menu button on larger screens */
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: block; /* Keeps it in the DOM, but transforms it off-screen */
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-100%); /* Move off-screen initially */
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    visibility: hidden; /* Hide by default */
+}
+
+.dropdown-menu.show {
+    transform: translateY(0); /* Slide in */
+    opacity: 1;
+    visibility: visible; /* Make it visible */
+}
+
+.dropdown-menu a {
+    display: block;
+    color: #242426;
+    padding: 12px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-menu ul {
+        display: none; /* Hide the default navigation */
+    }
+
+    .menu-button {
+        display: block; /* Show the hamburger button */
+    }
+}
