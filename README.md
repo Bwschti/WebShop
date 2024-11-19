@@ -12,3 +12,4 @@ neue Ordnerstruktur
 Fooder auf jede seite
 produkt pages machen
 preise
+bilder auf iphone page auto sizen
