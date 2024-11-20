@@ -216,13 +216,13 @@ h2 {
 }
 
 img {
-    max-width: 90%; /* Images scale down with container */
+    max-width: 60%; /* Images scale down with container */
     filter: brightness(85%);
     transition: 0.3s;
 }
 
 img:hover {
-    max-width: 100%; /* Images scale down with container */
+    max-width: 70%; /* Images scale down with container */
     filter: brightness(100%);
 }
 
@@ -255,6 +255,4 @@ footer {
     padding: 8px 20px; /* Adjust padding as needed */
 }
 
-img {
-    height: auto;
-}
+

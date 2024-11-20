@@ -216,13 +216,13 @@ h2 {
 }
 
 img {
-    max-width: 70%; /* Images scale down with container */
+    max-width: 30%;/* Images scale down with container */
     filter: brightness(75%);
     transition: 0.3s;
 }
 
 img:hover {
-    max-width: 80%; /* Images scale down with container */
+    max-width: 40%;; /* Images scale down with container */
     filter: brightness(100%);
 }
 
