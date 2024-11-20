@@ -17,19 +17,20 @@
             <li><a href="../AppleWatches/AppleWatchUltra2/WatchPage.html">Watch</a></li>
             <li><a href="../AppleTV/AppletvPage.html">Apple TV</a></li>
             <li><a href="../Airpods/Airpodspro2/AirpodsPage.html">AirPods</a></li>
-            <li><a href="">Kontakt</a></li>
+            <li><a href="../../MorePages/Kontakt/Kontakt.html">Kontakt</a></li>
+
         </ul>
         <button class="menu-button" onclick="toggleMenu()">☰</button>
     </nav>
     <div id="dropdown-menu" class="dropdown-menu">
-        <a href="../IPhones/iphonePage.html">iPhone</a>
-        <a href="../IPhones/iphonePage.html">iPad</a>
-        <a href="../IPhones/iphonePage.html">MacBook</a>
-        <a href="../IPhones/iphonePage.html">Watch</a>
-        <a href="../IPhones/iphonePage.html">Apple TV</a>
-        <a href="../IPhones/iphonePage.html">AirPods</a>
-        <a href="../IPhones/iphonePage.html">Zubehör</a>
-        <a href="../IPhones/iphonePage.html">Kontakt</a>
+        <a href="../IPhones/Iphone16/iphonePage.html">iPhone</a>
+        <a href="../IPads/Ipadprom4/ipadPage.html">iPad</a>
+        <a href="../MacBook/MacBookPage.html">MacBook</a>
+        <a href="../AppleWatches/AppleWatch10/WatchPage.html">Watch</a>
+        <a href="../AppleTV/AppletvPage.html">Apple TV</a>
+        <a href="../Airpods/Airpodspro2/AirpodsPage.html">AirPods</a>
+        <a href="../../MorePages/Kontakt/Kontakt.html">Kontakt</a>
+
     </div>
 </header>
 
@@ -48,11 +49,26 @@
         </p>
     </div>
 </div>
+<script>
+    function toggleMenu() {
+        const dropdownMenu = document.getElementById("dropdown-menu");
+        dropdownMenu.classList.toggle("show");
+    }
 
+    // Optional: Hide the menu when clicking outside
+    window.onclick = function(event) {
+        const dropdownMenu = document.getElementById("dropdown-menu");
+        const menuButton = document.querySelector('.menu-button');
+
+        if (!dropdownMenu.contains(event.target) && !menuButton.contains(event.target)) {
+            dropdownMenu.classList.remove("show");
+        }
+    }
+</script>
 <footer style="text-align: center; background-color: rgb(35, 32, 32);">
     <h2>Apple</h2>
-    <p><a href="" style="color: white;">Datenschutz</a></p>
-    <p><a href="" style="color: white;">Kontakt</a></p>
+    <p><a href="../../MorePages/Datenschutz/Datenschutz.html" style="color: white;">Datenschutz</a></p>
+    <p><a href="../../MorePages/Kontakt/Kontakt.html" style="color: white;">Kontakt</a></p>
 </footer>
 
 </body>
