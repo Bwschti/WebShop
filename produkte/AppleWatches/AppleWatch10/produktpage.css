@@ -189,8 +189,23 @@ body {
         flex-direction: column;
         gap: 1rem;
     }
-}
+    .nav-menu {
+        display: none; /* Navigation ausblenden */
+    }
 
+    .menu-button {
+        display: block; /* Hamburger-Menü anzeigen */
+    }
+
+    .dropdown-menu {
+        width: 100%;
+    }
+
+    .product-item {
+        font-size: 2rem;
+        padding: 20px;
+    }
+}
 
 .box {
     display: inline-block; /* Passt die Größe an den Inhalt an */

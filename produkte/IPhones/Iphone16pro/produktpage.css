@@ -197,7 +197,6 @@ body {
 }
 
 
-/* Darstellung für größere Bildschirme */
 @media (min-width: 768px) {
     .product-list {
         display: grid;
@@ -212,6 +211,22 @@ body {
         display: flex;
         flex-direction: column;
         gap: 1rem;
+    }
+    .nav-menu {
+        display: none; /* Navigation ausblenden */
+    }
+
+    .menu-button {
+        display: block; /* Hamburger-Menü anzeigen */
+    }
+
+    .dropdown-menu {
+        width: 100%;
+    }
+
+    .product-item {
+        font-size: 2rem;
+        padding: 20px;
     }
 }
 
