@@ -143,16 +143,6 @@ body {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    .nav-menu ul {
-        display: none; /* Hide the default navigation */
-
-    }
-
-    .menu-button {
-        display: block; /* Show the hamburger button */
-    }
-}
 
 @media (min-width: 768px) {
     .product-list {
@@ -189,8 +179,9 @@ body {
         flex-direction: column;
         gap: 1rem;
     }
-    .nav-menu {
-        display: none; /* Navigation ausblenden */
+    .nav-menu ul {
+        display: none; /* Hide the default navigation */
+
     }
 
     .menu-button {

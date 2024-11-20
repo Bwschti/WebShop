@@ -212,10 +212,10 @@ body {
         flex-direction: column;
         gap: 1rem;
     }
-    .nav-menu {
-        display: none; /* Navigation ausblenden */
-    }
+    .nav-menu ul {
+        display: none; /* Hide the default navigation */
 
+    }
     .menu-button {
         display: block; /* Hamburger-Menü anzeigen */
     }
