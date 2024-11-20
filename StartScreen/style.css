@@ -144,7 +144,7 @@ header {
 @media (min-width: 768px) {
     .product-list {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Drei Spalten */
+        grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
     }
 }
@@ -311,15 +311,8 @@ img {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    .nav-menu ul {
-        display: none; /* Hide the default navigation */
-    }
 
-    .menu-button {
-        display: block; /* Show the hamburger button */
-    }
-}
+
 
 footer {
     background-color: #242426;

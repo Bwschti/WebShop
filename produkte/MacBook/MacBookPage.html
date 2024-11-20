@@ -50,7 +50,22 @@
         </p>
     </div>
 </div>
+<script>
+    function toggleMenu() {
+        const dropdownMenu = document.getElementById("dropdown-menu");
+        dropdownMenu.classList.toggle("show");
+    }
 
+    // Optional: Hide the menu when clicking outside
+    window.onclick = function(event) {
+        const dropdownMenu = document.getElementById("dropdown-menu");
+        const menuButton = document.querySelector('.menu-button');
+
+        if (!dropdownMenu.contains(event.target) && !menuButton.contains(event.target)) {
+            dropdownMenu.classList.remove("show");
+        }
+    }
+</script>
 <footer style="text-align: center; background-color: rgb(35, 32, 32);">
     <h2>Apple</h2>
     <p><a href="" style="color: white;">Datenschutz</a></p>
