@@ -2,9 +2,9 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Fake Apple Seite</title>
-    <link rel="stylesheet" href="../CSS/Ipadminia17pro.css">
+    <link href="../CSS/Ipadminia17pro.css" rel="stylesheet">
 </head>
 <body>
 
@@ -22,7 +22,7 @@
         </ul>
         <button class="menu-button" onclick="toggleMenu()">☰</button>
     </nav>
-    <div id="dropdown-menu" class="dropdown-menu">
+    <div class="dropdown-menu" id="dropdown-menu">
         <a href="iphone16.html">iPhone</a>
         <a href="Ipadprom4.html">iPad</a>
         <a href="MacBookPage.html">MacBook</a>
@@ -34,19 +34,23 @@
     </div>
 </header>
 
-<div id="iphone" class="product-item">
+<div class="product-item" id="iphone">
     <div style="display: flex; justify-content: center; margin-top: 20px;">
-        <a href="Ipadprom4.html" class="LearnMore">Ipad Pro M4</a>
-        <a href="ipadm2.html" class="LearnMore">Ipad M2</a>
-        <a href="../Ipadminia17pro/ipadminia17pro.html" class="LearnMore">Ipad mini A17</a>
+        <a class="LearnMore" href="Ipadprom4.html">Ipad Pro M4</a>
+        <a class="LearnMore" href="ipadm2.html">Ipad M2</a>
+        <a class="LearnMore" href="ipadminia17pro.html">Ipad mini A17</a>
     </div>
 
     Ipad M2
-    <img src="../Bilder/Ipadmini.png" alt="Ipad Mini A17">
+    <img alt="Ipad Mini A17" src="../Bilder/Ipadmini.png">
     <div class="text-container">
         <h2>iPad Mini A17 Pro</h2>
         <p>
-            Das iPad Mini A17 Pro kombiniert die Leistung des A17-Chips mit der Portabilität eines 8,3-Zoll-Displays. Es passt in jede Tasche und ist trotzdem leistungsstark genug für Gaming, Streaming oder produktives Arbeiten. Das Retina-Display mit True Tone sorgt für gestochen scharfe Bilder. Dank Apple Pencil-Support ist es ideal für kreatives Arbeiten unterwegs. Die lange Akkulaufzeit macht es zum perfekten Reisebegleiter. Kompakt, leicht und leistungsstark – klein, aber oho.
+            Das iPad Mini A17 Pro kombiniert die Leistung des A17-Chips mit der Portabilität eines 8,3-Zoll-Displays. Es
+            passt in jede Tasche und ist trotzdem leistungsstark genug für Gaming, Streaming oder produktives Arbeiten.
+            Das Retina-Display mit True Tone sorgt für gestochen scharfe Bilder. Dank Apple Pencil-Support ist es ideal
+            für kreatives Arbeiten unterwegs. Die lange Akkulaufzeit macht es zum perfekten Reisebegleiter. Kompakt,
+            leicht und leistungsstark – klein, aber oho. <br><br> Preis 500 €
         </p>
     </div>
 </div>
@@ -57,7 +61,7 @@
     }
 
     // Optional: Hide the menu when clicking outside
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         const dropdownMenu = document.getElementById("dropdown-menu");
         const menuButton = document.querySelector('.menu-button');
 

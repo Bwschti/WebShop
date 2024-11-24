@@ -2,10 +2,10 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Fake Apple Site</title>
-    <link rel="icon" type="image/x-icon" href="../Bilder/AppleLogo.png">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="../Bilder/AppleLogo.png" rel="icon" type="image/x-icon">
+    <link href="../CSS/style.css" rel="stylesheet">
 </head>
 <body>
 
@@ -22,7 +22,7 @@
         </ul>
         <button class="menu-button" onclick="toggleMenu()">☰</button>
     </nav>
-    <div id="dropdown-menu" class="dropdown-menu">
+    <div class="dropdown-menu" id="dropdown-menu">
         <a href="iphone16.html">iPhone</a>
         <a href="Ipadprom4.html">iPad</a>
         <a href="MacBookPage.html">MacBook</a>
@@ -34,44 +34,44 @@
 </header>
 
 <main>
-        <div class="product-list">
-            <div id="iphone" class="product-item">
-                iPhone
-                <small class="Beschreibung">Hello, Apple Intelligence.</small>
-                <div class="button-container">
-                    <a href="iphone16.html" class="LearnMore">Learn More</a>
-                    <a href="Kontakt.html" class="BuyButton">Buy</a>
-                </div>
-                <img src="../Bilder/iphone16.png" alt="Iphone 16">
+    <div class="product-list">
+        <div class="product-item" id="iphone">
+            iPhone
+            <small class="Beschreibung">Hello, Apple Intelligence.</small>
+            <div class="button-container">
+                <a class="LearnMore" href="iphone16.html">Learn More</a>
+                <a class="BuyButton" href="Kontakt.html">Buy</a>
             </div>
-
-
-            <div id="IPad" class="product-item">iPad<br>
-                <a href="#" class="LearnMore">Learn More</a>
-                <a href="#" class="BuyButton">Buy</a><br>
-                <img src="../Bilder/IPadprom4.png" alt="Ipad"></div>
-
-            <div id="MacBook" class="product-item">MacBook<br>
-                <a href="#" class="LearnMore">Learn More</a>
-                <a href="#" class="BuyButton">Buy</a><br>
-                <img src="../Bilder/M4MacBook.png" alt="Ipad"></div>
-
-            <div id="Apple_Watch" class="product-item">Apple Watch<br>
-                <a href="#" class="LearnMore">Learn More</a>
-                <a href="#" class="BuyButton">Buy</a><br>
-                <img src="../Bilder/applewatch10.png" alt="Ipad"></div>
-
-            <div id="Apple_TV" class="product-item">Apple TV<br>
-                <a href="#" class="LearnMore">Learn More</a>
-                <a href="#" class="BuyButton">Buy</a><br>
-                <img src="../Bilder/appletv.png" alt="Ipad"></div>
-
-            <div id="AirPods" class="product-item">AirPods<br>
-                <a href="#" class="LearnMore">Learn More</a>
-                <a href="#" class="BuyButton">Buy</a><br>
-                <img src="../Bilder/airpodspro2.png" alt="Ipad"></div>
-
+            <img alt="Iphone 16" src="../Bilder/iphone16.png">
         </div>
+
+
+        <div class="product-item" id="IPad">iPad<br>
+            <a class="LearnMore" href="Ipadprom4.html">Learn More</a>
+            <a class="BuyButton" href="Kontakt.html">Buy</a><br>
+            <img alt="Ipad" src="../Bilder/IPadprom4.png"></div>
+
+        <div class="product-item" id="MacBook">MacBook<br>
+            <a class="LearnMore" href="MacBookPage.html">Learn More</a>
+            <a class="BuyButton" href="Kontakt.html">Buy</a><br>
+            <img alt="Ipad" src="../Bilder/M4MacBook.png"></div>
+
+        <div class="product-item" id="Apple_Watch">Apple Watch<br>
+            <a class="LearnMore" href="applewatch10.html">Learn More</a>
+            <a class="BuyButton" href="Kontakt.html">Buy</a><br>
+            <img alt="Ipad" src="../Bilder/applewatch10.png"></div>
+
+        <div class="product-item" id="Apple_TV">Apple TV<br>
+            <a class="LearnMore" href="AppletvPage.html">Learn More</a>
+            <a class="BuyButton" href="Kontakt.html">Buy</a><br>
+            <img alt="Ipad" src="../Bilder/appletv.png"></div>
+
+        <div class="product-item" id="AirPods">AirPods<br>
+            <a class="LearnMore" href="airpodspro2.html">Learn More</a>
+            <a class="BuyButton" href="Kontakt.html">Buy</a><br>
+            <img alt="Ipad" src="../Bilder/airpodspro2.png"></div>
+
+    </div>
 </main>
 <script>
     function toggleMenu() {
@@ -80,7 +80,7 @@
     }
 
     // Optional: Hide the menu when clicking outside
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         const dropdownMenu = document.getElementById("dropdown-menu");
         const menuButton = document.querySelector('.menu-button');
 

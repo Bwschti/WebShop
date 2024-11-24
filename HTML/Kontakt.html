@@ -2,9 +2,9 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Fake Apple Seite</title>
-    <link rel="stylesheet" href="../CSS/kontakt.css">
+    <link href="../CSS/kontakt.css" rel="stylesheet">
 </head>
 <body>
 
@@ -17,26 +17,26 @@
             <li><a href="applewatch10.html">Watch</a></li>
             <li><a href="AppletvPage.html">Apple TV</a></li>
             <li><a href="airpodspro2.html">AirPods</a></li>
-            <li><a href="../Kontakt/Kontakt.html">Kontakt</a></li>
+            <li><a href="Kontakt.html">Kontakt</a></li>
 
         </ul>
         <button class="menu-button" onclick="toggleMenu()">☰</button>
     </nav>
-    <div id="dropdown-menu" class="dropdown-menu">
+    <div class="dropdown-menu" id="dropdown-menu">
         <a href="iphone16.html">iPhone</a>
         <a href="Ipadprom4.html">iPad</a>
         <a href="MacBookPage.html">MacBook</a>
         <a href="applewatch10.html">Watch</a>
         <a href="AppletvPage.html">Apple TV</a>
         <a href="airpodspro2.html">AirPods</a>
-        <a href="../Kontakt/Kontakt.html">Kontakt</a>
+        <a href="Kontakt.html">Kontakt</a>
     </div>
 </header>
 
-<div id="iphone" class="product-item">
+<div class="product-item" id="iphone">
     <div style="display: flex; justify-content: center; margin-top: 20px;">
-        <a href="Impressum.html" class="LearnMore">Impressum</a>
-        <a href="Datenschutz.html" class="LearnMore">Datenschutz</a>
+        <a class="LearnMore" href="Impressum.html">Impressum</a>
+        <a class="LearnMore" href="Datenschutz.html">Datenschutz</a>
     </div>
     Kontakt
     <div class="text-container">
@@ -49,7 +49,8 @@
         <input class="text" placeholder="Betreff" type="text"><br><br>
         <textarea class="text" placeholder="Nachricht" style="width: 300px; height: 200px"></textarea><br><br>
 
-        <button class="text">Absenden</button><br><br>
+        <button class="text">Absenden</button>
+        <br><br>
 
         <div class="map_container">
             <iframe
@@ -71,7 +72,7 @@
     }
 
     // Optional: Hide the menu when clicking outside
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         const dropdownMenu = document.getElementById("dropdown-menu");
         const menuButton = document.querySelector('.menu-button');
 
@@ -83,7 +84,7 @@
 <footer style="text-align: center; background-color: rgb(35, 32, 32);">
     <h2>Apple</h2>
     <p><a href="Datenschutz.html" style="color: white;">Datenschutz</a></p>
-    <p><a href="../Kontakt/Kontakt.html" style="color: white;">Kontakt</a></p>
+    <p><a href="Kontakt.html" style="color: white;">Kontakt</a></p>
 </footer>
 
 </body>

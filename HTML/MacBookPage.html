@@ -2,9 +2,9 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Fake Apple Seite</title>
-    <link rel="stylesheet" href="../CSS/macbookpage.css">
+    <link href="../CSS/macbookpage.css" rel="stylesheet">
 </head>
 <body>
 
@@ -13,7 +13,7 @@
         <ul>
             <li><a href="iphone16.html">iPhone</a></li>
             <li><a href="Ipadprom4.html">iPad</a></li>
-            <li><a href="../MacBook/MacBookPage.html">MacBook</a></li>
+            <li><a href="MacBookPage.html">MacBook</a></li>
             <li><a href="watchultra2.html">Watch</a></li>
             <li><a href="AppletvPage.html">Apple TV</a></li>
             <li><a href="airpodspro2.html">AirPods</a></li>
@@ -21,10 +21,10 @@
         </ul>
         <button class="menu-button" onclick="toggleMenu()">☰</button>
     </nav>
-    <div id="dropdown-menu" class="dropdown-menu">
+    <div class="dropdown-menu" id="dropdown-menu">
         <a href="iphone16.html">iPhone</a>
         <a href="Ipadprom4.html">iPad</a>
-        <a href="../MacBook/MacBookPage.html">MacBook</a>
+        <a href="MacBookPage.html">MacBook</a>
         <a href="applewatch10.html">Watch</a>
         <a href="AppletvPage.html">Apple TV</a>
         <a href="airpodspro2.html">AirPods</a>
@@ -32,16 +32,22 @@
     </div>
 </header>
 
-<div id="iphone" class="product-item">
+<div class="product-item" id="iphone">
     <div style="display: flex; justify-content: center; margin-top: 20px;">
     </div>
 
     MacBook M4
-    <img src="../Bilder/M4MacBook.png" alt="Mac Book M4">
+    <img alt="Mac Book M4" src="../Bilder/M4MacBook.png">
     <div class="text-container">
         <h2>MacBook M4</h2>
         <p>
-            Das MacBook mit M4-Chip setzt neue Maßstäbe in Leistung und Effizienz. Der M4 sorgt für beeindruckend schnelles Arbeiten, sei es für Multitasking, professionelle Software oder kreative Projekte. Das hochauflösende Liquid Retina Display bietet brillante Farben und gestochen scharfe Details – ideal für Arbeiten oder Entertainment. Mit einer Akkulaufzeit von bis zu 20 Stunden begleitet es Sie durch den ganzen Tag. Das schlanke, leichte Design macht es perfekt für unterwegs. Thunderbolt-Ports und Wi-Fi 6E bieten maximale Konnektivität und Geschwindigkeit. Ein leistungsstarker Begleiter für alle Anforderungen.
+            Das MacBook mit M4-Chip setzt neue Maßstäbe in Leistung und Effizienz. Der M4 sorgt für beeindruckend
+            schnelles Arbeiten, sei es für Multitasking, professionelle Software oder kreative Projekte. Das
+            hochauflösende Liquid Retina Display bietet brillante Farben und gestochen scharfe Details – ideal für
+            Arbeiten oder Entertainment. Mit einer Akkulaufzeit von bis zu 20 Stunden begleitet es Sie durch den ganzen
+            Tag. Das schlanke, leichte Design macht es perfekt für unterwegs. Thunderbolt-Ports und Wi-Fi 6E bieten
+            maximale Konnektivität und Geschwindigkeit. Ein leistungsstarker Begleiter für alle Anforderungen.
+            <br><br> Preis 2000 €
         </p>
     </div>
 </div>
@@ -52,7 +58,7 @@
     }
 
     // Optional: Hide the menu when clicking outside
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         const dropdownMenu = document.getElementById("dropdown-menu");
         const menuButton = document.querySelector('.menu-button');
 

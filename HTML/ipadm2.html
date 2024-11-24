@@ -2,9 +2,9 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Fake Apple Seite</title>
-    <link rel="stylesheet" href="../CSS/ipadm2.css">
+    <link href="../CSS/ipadm2.css" rel="stylesheet">
 </head>
 <body>
 
@@ -22,7 +22,7 @@
         </ul>
         <button class="menu-button" onclick="toggleMenu()">☰</button>
     </nav>
-    <div id="dropdown-menu" class="dropdown-menu">
+    <div class="dropdown-menu" id="dropdown-menu">
         <a href="iphone16.html">iPhone</a>
         <a href="Ipadprom4.html">iPad</a>
         <a href="MacBookPage.html">MacBook</a>
@@ -34,19 +34,23 @@
     </div>
 </header>
 
-<div id="iphone" class="product-item">
+<div class="product-item" id="iphone">
     <div style="display: flex; justify-content: center; margin-top: 20px;">
-        <a href="Ipadprom4.html" class="LearnMore">Ipad Pro M4</a>
-        <a href="../Ipadm2/ipadm2.html" class="LearnMore">Ipad M2</a>
-        <a href="ipadminia17pro.html" class="LearnMore">Ipad mini A17</a>
+        <a class="LearnMore" href="Ipadprom4.html">Ipad Pro M4</a>
+        <a class="LearnMore" href="ipadm2.html">Ipad M2</a>
+        <a class="LearnMore" href="ipadminia17pro.html">Ipad mini A17</a>
     </div>
 
     Ipad M2
-    <img src="../Bilder/Ipadm2.png" alt="Ipadm2">
+    <img alt="Ipadm2" src="../Bilder/Ipadm2.png">
     <div class="text-container">
         <h2>iPad M2</h2>
         <p>
-            Das iPad M2 bietet die perfekte Balance zwischen Leistung und Preis. Der M2-Chip ermöglicht flüssiges Multitasking und schnelles Arbeiten mit Apps wie Photoshop oder Final Cut Pro. Das 10,9-Zoll Liquid Retina Display macht Filme und Spiele lebendig. Es unterstützt den Apple Pencil der 2. Generation, ideal für Notizen und Skizzen. Mit 5G und Wi-Fi 6 bleiben Sie überall produktiv. Leicht und tragbar, ist es perfekt für den Alltag oder die Uni.
+            Das iPad M2 bietet die perfekte Balance zwischen Leistung und Preis. Der M2-Chip ermöglicht flüssiges
+            Multitasking und schnelles Arbeiten mit Apps wie Photoshop oder Final Cut Pro. Das 10,9-Zoll Liquid Retina
+            Display macht Filme und Spiele lebendig. Es unterstützt den Apple Pencil der 2. Generation, ideal für
+            Notizen und Skizzen. Mit 5G und Wi-Fi 6 bleiben Sie überall produktiv. Leicht und tragbar ist es perfekt
+            für den Alltag oder die Uni. <br><br> Preis 800 €
         </p>
     </div>
 </div>
@@ -57,7 +61,7 @@
     }
 
     // Optional: Hide the menu when clicking outside
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         const dropdownMenu = document.getElementById("dropdown-menu");
         const menuButton = document.querySelector('.menu-button');
 

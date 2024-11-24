@@ -2,9 +2,9 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Fake Apple Seite</title>
-    <link rel="stylesheet" href="../CSS/applewatch10.css">
+    <link href="../CSS/applewatch10.css" rel="stylesheet">
 </head>
 <body>
 
@@ -22,11 +22,11 @@
         </ul>
         <button class="menu-button" onclick="toggleMenu()">☰</button>
     </nav>
-    <div id="dropdown-menu" class="dropdown-menu">
+    <div class="dropdown-menu" id="dropdown-menu">
         <a href="iphone16.html">iPhone</a>
         <a href="Ipadprom4.html">iPad</a>
         <a href="MacBookPage.html">MacBook</a>
-        <a href="../../AppleWatches/AppleWatch10/applewatch10.html">Watch</a>
+        <a href="applewatch10.html">Watch</a>
         <a href="AppletvPage.html">Apple TV</a>
         <a href="airpodspro2.html">AirPods</a>
         <a href="Kontakt.html">Kontakt</a>
@@ -34,18 +34,22 @@
     </div>
 </header>
 
-<div id="iphone" class="product-item">
+<div class="product-item" id="iphone">
     <div style="display: flex; justify-content: center; margin-top: 20px;">
-        <a href="../AppleWatch10/applewatch10.html" class="LearnMore">Apple Watch 10</a>
-        <a href="watchultra2.html" class="LearnMore">Apple Watch Ultra 2</a>
+        <a class="LearnMore" href="applewatch10.html">Apple Watch 10</a>
+        <a class="LearnMore" href="watchultra2.html">Apple Watch Ultra 2</a>
     </div>
 
     Apple Watch 10
-    <img src="../Bilder/applewatch10.png" alt="apple watch 10">
+    <img alt="apple watch 10" src="../Bilder/applewatch10.png">
     <div class="text-container">
         <h2>Apple Watch 10</h2>
         <p>
-            Die Apple Watch 10 ist smarter denn je und bietet neue Funktionen wie die präzisere Messung von Herzfrequenz und Sauerstoffsättigung. Das größere Always-On-Display ist heller und erleichtert die Bedienung. Neue Zifferblätter und ein überarbeitetes Design sorgen für mehr Individualität. Fitness- und Gesundheits-Tracking sind noch präziser, mit Erkenntnissen zu Schlaf und Aktivität. Mit längerer Akkulaufzeit und schnellem Laden ist sie bereit für jede Herausforderung.
+            Die Apple Watch 10 ist smarter denn je und bietet neue Funktionen wie die präzisere Messung von Herzfrequenz
+            und Sauerstoffsättigung. Das größere Always-On-Display ist heller und erleichtert die Bedienung. Neue
+            Zifferblätter und ein überarbeitetes Design sorgen für mehr Individualität. Fitness- und
+            Gesundheits-Tracking sind noch präziser, mit Erkenntnissen zu Schlaf und Aktivität. Mit längerer
+            Akkulaufzeit und schnellem Laden ist sie bereit für jede Herausforderung. <br><br> Preis 800 €
         </p>
     </div>
 </div>
@@ -56,7 +60,7 @@
     }
 
     // Optional: Hide the menu when clicking outside
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         const dropdownMenu = document.getElementById("dropdown-menu");
         const menuButton = document.querySelector('.menu-button');
 

@@ -2,9 +2,9 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Fake Apple Seite</title>
-    <link rel="stylesheet" href="../CSS/Ipadprom4.css">
+    <link href="../CSS/Ipadprom4.css" rel="stylesheet">
 </head>
 <body>
 
@@ -12,7 +12,7 @@
     <nav class="nav-menu">
         <ul>
             <li><a href="iphone16.html">iPhone</a></li>
-            <li><a href="../../IPads/Ipadprom4/Ipadprom4.html">iPad</a></li>
+            <li><a href="Ipadprom4.html">iPad</a></li>
             <li><a href="MacBookPage.html">MacBook</a></li>
             <li><a href="watchultra2.html">Watch</a></li>
             <li><a href="AppletvPage.html">Apple TV</a></li>
@@ -22,9 +22,9 @@
         </ul>
         <button class="menu-button" onclick="toggleMenu()">☰</button>
     </nav>
-    <div id="dropdown-menu" class="dropdown-menu">
+    <div class="dropdown-menu" id="dropdown-menu">
         <a href="iphone16.html">iPhone</a>
-        <a href="../../IPads/Ipadprom4/Ipadprom4.html">iPad</a>
+        <a href="Ipadprom4.html">iPad</a>
         <a href="MacBookPage.html">MacBook</a>
         <a href="applewatch10.html">Watch</a>
         <a href="AppletvPage.html">Apple TV</a>
@@ -34,19 +34,24 @@
     </div>
 </header>
 
-<div id="iphone" class="product-item">
+<div class="product-item" id="iphone">
     <div style="display: flex; justify-content: center; margin-top: 20px;">
-        <a href="../Ipadprom4/Ipadprom4.html" class="LearnMore">Ipad Pro M4</a>
-        <a href="ipadm2.html" class="LearnMore">Ipad M2</a>
-        <a href="ipadminia17pro.html" class="LearnMore">Ipad mini A17</a>
+        <a class="LearnMore" href="Ipadprom4.html">Ipad Pro M4</a>
+        <a class="LearnMore" href="ipadm2.html">Ipad M2</a>
+        <a class="LearnMore" href="ipadminia17pro.html">Ipad mini A17</a>
     </div>
 
     iPhone 16
-    <img src="../Bilder/IPadprom4.png" alt="IPad Pro M4">
+    <img alt="IPad Pro M4" src="../Bilder/IPadprom4.png">
     <div class="text-container">
         <h2>iPad Pro M4</h2>
         <p>
-            Das iPad Pro M4 ist ein Kraftpaket, das den M4-Chip nutzt, um die Grenzen von Kreativität und Produktivität zu erweitern. Das Liquid Retina XDR-Display bietet atemberaubende Helligkeit und Farbgenauigkeit – ideal für Designer und Fotografen. Mit Unterstützung für den Apple Pencil und Magic Keyboard wird das iPad zum Laptop-Ersatz. Dank Wi-Fi 6E und 5G bleiben Sie immer verbunden. Die verbesserte Kamera sorgt für kristallklare Videoanrufe und AR-Anwendungen. Perfekt für alle, die maximale Leistung und Flexibilität brauchen.
+            Das iPad Pro M4 ist ein Kraftpaket, das den M4-Chip nutzt, um die Grenzen von Kreativität und Produktivität
+            zu erweitern. Das Liquid Retina XDR-Display bietet atemberaubende Helligkeit und Farbgenauigkeit – ideal für
+            Designer und Fotografen. Mit Unterstützung für den Apple Pencil und Magic Keyboard wird das iPad zum
+            Laptop-Ersatz. Dank Wi-Fi 6E und 5G bleiben Sie immer verbunden. Die verbesserte Kamera sorgt für
+            kristallklare Videoanrufe und AR-Anwendungen. Perfekt für alle, die maximale Leistung und Flexibilität
+            brauchen. <br><br> Preis 1100 €
         </p>
     </div>
 </div>
@@ -57,7 +62,7 @@
     }
 
     // Optional: Hide the menu when clicking outside
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         const dropdownMenu = document.getElementById("dropdown-menu");
         const menuButton = document.querySelector('.menu-button');
 

@@ -2,9 +2,9 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Fake Apple Seite</title>
-    <link rel="stylesheet" href="../CSS/iphone16promax.css">
+    <link href="../CSS/iphone16promax.css" rel="stylesheet">
 </head>
 <body>
 
@@ -21,7 +21,7 @@
         </ul>
         <button class="menu-button" onclick="toggleMenu()">☰</button>
     </nav>
-    <div id="dropdown-menu" class="dropdown-menu">
+    <div class="dropdown-menu" id="dropdown-menu">
         <a href="iphone16.html">iPhone</a>
         <a href="Ipadprom4.html">iPad</a>
         <a href="MacBookPage.html">MacBook</a>
@@ -33,19 +33,24 @@
     </div>
 </header>
 
-<div id="iphone" class="product-item">
+<div class="product-item" id="iphone">
     <div style="display: flex; justify-content: center; margin-top: 20px;">
-        <a href="iphone16.html" class="LearnMore">Iphone 16</a>
-        <a href="iphone16pro.html" class="LearnMore">Iphone 16 pro </a>
-        <a href="../Iphone16promax/iphone16promaxPage.html" class="LearnMore">Iphone 16 pro max</a>
+        <a class="LearnMore" href="iphone16.html">Iphone 16</a>
+        <a class="LearnMore" href="iphone16pro.html">Iphone 16 pro </a>
+        <a class="LearnMore" href="iphone16promaxPage.html">Iphone 16 pro max</a>
     </div>
 
     iPhone 16 Pro Max
-    <img src="../Bilder/iphone16promax.png" alt="iPhone 16">
+    <img alt="iPhone 16" src="../Bilder/iphone16promax.png">
     <div class="text-container">
         <h2>iPhone 16 pro max</h2>
         <p>
-            Das iPhone 16 Pro und Pro Max setzen neue Maßstäbe mit dem leistungsstarken A18 Bionic-Chip, der blitzschnelle Performance garantiert. Die beeindruckenden Kameras bieten Features wie verbesserten Nachtmodus und 10-fachen optischen Zoom. Dank des robusten Titan-Designs und Ceramic Shield sind sie besonders langlebig. Mit Dynamic Island und dem 120-Hz-ProMotion-Display wirken Animationen flüssiger denn je. Beide Modelle bieten außergewöhnliche Akkulaufzeiten – perfekt für lange Tage. Entscheiden Sie sich für das Pro Max, um ein noch größeres 6,7-Zoll-Display zu genießen.
+            Das iPhone 16 Pro und Pro Max setzen neue Maßstäbe mit dem leistungsstarken A18 Bionic-Chip, der
+            blitzschnelle Performance garantiert. Die beeindruckenden Kameras bieten Features wie verbesserten
+            Nachtmodus und 10-fachen optischen Zoom. Dank des robusten Titan-Designs und Ceramic Shield sind sie
+            besonders langlebig. Mit Dynamic Island und dem 120-Hz-ProMotion-Display wirken Animationen flüssiger denn
+            je. Beide Modelle bieten außergewöhnliche Akkulaufzeiten – perfekt für lange Tage. Entscheiden Sie sich für
+            das Pro Max, um ein noch größeres 6,7-Zoll-Display zu genießen.<br><br> Preis 1300 €
         </p>
     </div>
 </div>
@@ -56,7 +61,7 @@
     }
 
     // Optional: Hide the menu when clicking outside
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         const dropdownMenu = document.getElementById("dropdown-menu");
         const menuButton = document.querySelector('.menu-button');
 

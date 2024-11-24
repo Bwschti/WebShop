@@ -2,9 +2,9 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Fake Apple Seite</title>
-    <link rel="stylesheet" href="../CSS/airpodspro2.css">
+    <link href="../CSS/airpodspro2.css" rel="stylesheet">
 </head>
 <body>
 
@@ -16,36 +16,41 @@
             <li><a href="MacBookPage.html">MacBook</a></li>
             <li><a href="watchultra2.html">Watch</a></li>
             <li><a href="AppletvPage.html">Apple TV</a></li>
-            <li><a href="../../Airpods/Airpodspro2/airpodspro2.html">AirPods</a></li>
+            <li><a href="airpodspro2.html">AirPods</a></li>
             <li><a href="Kontakt.html">Kontakt</a></li>
 
         </ul>
         <button class="menu-button" onclick="toggleMenu()">☰</button>
     </nav>
-    <div id="dropdown-menu" class="dropdown-menu">
+    <div class="dropdown-menu" id="dropdown-menu">
         <a href="iphone16.html">iPhone</a>
         <a href="Ipadprom4.html">iPad</a>
         <a href="MacBookPage.html">MacBook</a>
         <a href="applewatch10.html">Watch</a>
         <a href="AppletvPage.html">Apple TV</a>
-        <a href="../../Airpods/Airpodspro2/airpodspro2.html">AirPods</a>
+        <a href="airpodspro2.html">AirPods</a>
         <a href="Kontakt.html">Kontakt</a>
 
     </div>
 </header>
 
-<div id="iphone" class="product-item">
+<div class="product-item" id="iphone">
     <div style="display: flex; justify-content: center; margin-top: 20px;">
-        <a href="../Airpodspro2/airpodspro2.html" class="LearnMore">AirPods Pro 2</a>
-        <a href="airpods4.html" class="LearnMore">AirPods 4</a>
+        <a class="LearnMore" href="airpodspro2.html">AirPods Pro 2</a>
+        <a class="LearnMore" href="airpods4.html">AirPods 4</a>
     </div>
 
     Airpods Pro 2
-    <img src="../Bilder/airpodspro2.png" alt="Airpods pro 2">
+    <img alt="Airpods pro 2" src="../Bilder/airpodspro2.png">
     <div class="text-container">
         <h2>AirPods Pro 2</h2>
         <p>
-            Die AirPods Pro 2 sind die perfekte Wahl für Audiophile, die sich hochwertige Klangqualität wünschen. Mit aktivem Noise-Cancelling tauchen Sie in Ihre Musik ein, ohne von Umgebungsgeräuschen gestört zu werden. Der Transparenzmodus lässt Sie dennoch bewusst an Ihrer Umgebung teilhaben. Die neuen H2-Chips bieten verbesserte Audioqualität und Effizienz. Mit einer Akkulaufzeit von bis zu 6 Stunden und MagSafe-kompatibler Ladehülle sind sie der ideale Begleiter für unterwegs. Wasser- und schweißresistent – perfekt für jede Situation.
+            Die AirPods Pro 2 sind die perfekte Wahl für Audiophile, die sich hochwertige Klangqualität wünschen. Mit
+            aktivem Noise-Cancelling tauchen Sie in Ihre Musik ein, ohne von Umgebungsgeräuschen gestört zu werden. Der
+            Transparenzmodus lässt Sie dennoch bewusst an Ihrer Umgebung teilhaben. Die neuen H2-Chips bieten
+            verbesserte Audioqualität und Effizienz. Mit einer Akkulaufzeit von bis zu 6 Stunden und MagSafe-kompatibler
+            Ladehülle sind sie der ideale Begleiter für unterwegs. Wasser- und schweißresistent – perfekt für jede
+            Situation. <br><br> Preis 700 €
         </p>
     </div>
 </div>
@@ -56,7 +61,7 @@
     }
 
     // Optional: Hide the menu when clicking outside
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         const dropdownMenu = document.getElementById("dropdown-menu");
         const menuButton = document.querySelector('.menu-button');
 

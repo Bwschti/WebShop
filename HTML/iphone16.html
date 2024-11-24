@@ -2,16 +2,16 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Fake Apple Seite</title>
-    <link rel="stylesheet" href="../CSS/iphone16.css">
+    <link href="../CSS/iphone16.css" rel="stylesheet">
 </head>
 <body>
 
 <header>
     <nav class="nav-menu">
         <ul>
-            <li><a href="../../IPhones/Iphone16/iphone16.html">iPhone</a></li>
+            <li><a href="iphone16.html">iPhone</a></li>
             <li><a href="Ipadprom4.html">iPad</a></li>
             <li><a href="MacBookPage.html">MacBook</a></li>
             <li><a href="watchultra2.html">Watch</a></li>
@@ -22,8 +22,8 @@
         </ul>
         <button class="menu-button" onclick="toggleMenu()">☰</button>
     </nav>
-    <div id="dropdown-menu" class="dropdown-menu">
-        <a href="../../IPhones/Iphone16/iphone16.html">iPhone</a>
+    <div class="dropdown-menu" id="dropdown-menu">
+        <a href="iphone16.html">iPhone</a>
         <a href="Ipadprom4.html">iPad</a>
         <a href="MacBookPage.html">MacBook</a>
         <a href="applewatch10.html">Watch</a>
@@ -34,15 +34,15 @@
     </div>
 </header>
 
-<div id="iphone" class="product-item">
+<div class="product-item" id="iphone">
     <div style="display: flex; justify-content: center; margin-top: 20px;">
-        <a href="../Iphone16/iphone16.html" class="LearnMore">Iphone 16</a>
-        <a href="iphone16pro.html" class="LearnMore">Iphone 16 pro </a>
-        <a href="iphone16promaxPage.html" class="LearnMore">Iphone 16 pro max</a>
+        <a class="LearnMore" href="iphone16.html">Iphone 16</a>
+        <a class="LearnMore" href="iphone16pro.html">Iphone 16 pro </a>
+        <a class="LearnMore" href="iphone16promaxPage.html">Iphone 16 pro max</a>
     </div>
 
     iPhone 16
-    <img src="../Bilder/iphone16.png" alt="iPhone 16">
+    <img alt="iPhone 16" src="../Bilder/iphone16.png">
     <div class="text-container">
         <h2>iPhone 16: Ein Meisterwerk der Eleganz</h2>
         <p>
@@ -53,6 +53,7 @@
             Verbesserstes Kamerasystem: Nehmen Sie Ihre besten Momente mit einer 48-Megapixel-Hauptkamera und neuen
             KI-Features auf.
             Längere Akkulaufzeit: Bleiben Sie länger verbunden, mit einer um 20 % gesteigerten Akkukapazität.
+            <br><br> Preis 1000 €
         </p>
     </div>
 </div>
@@ -63,7 +64,7 @@
     }
 
     // Optional: Hide the menu when clicking outside
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         const dropdownMenu = document.getElementById("dropdown-menu");
         const menuButton = document.querySelector('.menu-button');
 

@@ -2,9 +2,9 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Fake Apple Seite</title>
-    <link rel="stylesheet" href="../CSS/appletv.css">
+    <link href="../CSS/appletv.css" rel="stylesheet">
 </head>
 <body>
 
@@ -15,34 +15,38 @@
             <li><a href="Ipadprom4.html">iPad</a></li>
             <li><a href="MacBookPage.html">MacBook</a></li>
             <li><a href="watchultra2.html">Watch</a></li>
-            <li><a href="../AppleTV/AppletvPage.html">Apple TV</a></li>
+            <li><a href="AppletvPage.html">Apple TV</a></li>
             <li><a href="airpodspro2.html">AirPods</a></li>
             <li><a href="Kontakt.html">Kontakt</a></li>
 
         </ul>
         <button class="menu-button" onclick="toggleMenu()">☰</button>
     </nav>
-    <div id="dropdown-menu" class="dropdown-menu">
+    <div class="dropdown-menu" id="dropdown-menu">
         <a href="iphone16.html">iPhone</a>
         <a href="Ipadprom4.html">iPad</a>
         <a href="MacBookPage.html">MacBook</a>
         <a href="applewatch10.html">Watch</a>
-        <a href="../AppleTV/AppletvPage.html">Apple TV</a>
+        <a href="AppletvPage.html">Apple TV</a>
         <a href="airpodspro2.html">AirPods</a>
         <a href="Kontakt.html">Kontakt</a>
 
     </div>
 </header>
 
-<div id="iphone" class="product-item">
+<div class="product-item" id="iphone">
     <div style="display: flex; justify-content: center; margin-top: 20px;">
     </div>
     Apple TV
-    <img src="../Bilder/appletv.png" alt="Airpods pro 2">
+    <img alt="Airpods pro 2" src="../Bilder/appletv.png">
     <div class="text-container">
         <h2>Apple TV</h2>
         <p>
-            Apple TV bringt Ihre Lieblingsinhalte mit 4K HDR und Dolby Atmos in Spitzenqualität auf den Bildschirm. Mit der Siri Remote können Sie bequem navigieren und sogar die Steuerung per Stimme übernehmen. Es unterstützt Apple Arcade für Gaming-Fans und bietet nahtlose Integration mit Apple-Geräten. Streaming-Dienste wie Netflix, Disney+ und Prime Video werden in atemberaubender Qualität unterstützt. Das kompakte Design fügt sich in jedes Wohnzimmer nahtlos ein.
+            Apple TV bringt Ihre Lieblingsinhalte mit 4K HDR und Dolby Atmos in Spitzenqualität auf den Bildschirm. Mit
+            der Siri Remote können Sie bequem navigieren und sogar die Steuerung per Stimme übernehmen. Es unterstützt
+            Apple Arcade für Gaming-Fans und bietet nahtlose Integration mit Apple-Geräten. Streaming-Dienste wie
+            Netflix, Disney+ und Prime Video werden in atemberaubender Qualität unterstützt. Das kompakte Design fügt
+            sich in jedes Wohnzimmer nahtlos ein. <br><br> Preis 200 €
         </p>
     </div>
 </div>
@@ -53,7 +57,7 @@
     }
 
     // Optional: Hide the menu when clicking outside
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         const dropdownMenu = document.getElementById("dropdown-menu");
         const menuButton = document.querySelector('.menu-button');
 

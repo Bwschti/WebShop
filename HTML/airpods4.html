@@ -2,9 +2,9 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Fake Apple Seite</title>
-    <link rel="stylesheet" href="../CSS/airpods4.css">
+    <link href="../CSS/airpods4.css" rel="stylesheet">
 </head>
 <body>
 
@@ -22,7 +22,7 @@
         </ul>
         <button class="menu-button" onclick="toggleMenu()">☰</button>
     </nav>
-    <div id="dropdown-menu" class="dropdown-menu">
+    <div class="dropdown-menu" id="dropdown-menu">
         <a href="iphone16.html">iPhone</a>
         <a href="Ipadprom4.html">iPad</a>
         <a href="MacBookPage.html">MacBook</a>
@@ -34,17 +34,21 @@
     </div>
 </header>
 
-<div id="iphone" class="product-item">
+<div class="product-item" id="iphone">
     <div style="display: flex; justify-content: center; margin-top: 20px;">
-        <a href="airpodspro2.html" class="LearnMore">AirPods Pro 2</a>
-        <a href="../Airpods4/airpods4.html" class="LearnMore">AirPods 4</a>
+        <a class="LearnMore" href="airpodspro2.html">AirPods Pro 2</a>
+        <a class="LearnMore" href="airpods4.html">AirPods 4</a>
     </div>
     AirPods 4
-    <img src="../Bilder/airpods4.png" alt="Airpods pro 2">
+    <img alt="Airpods pro 2" src="../Bilder/airpods4.png">
     <div class="text-container">
         <h2>AirPods 4</h2>
         <p>
-            Die AirPods 4 vereinen Stil und Funktionalität in einem schlanken Design. Die verbesserte Klangtechnologie sorgt für satteren Sound und klare Stimmen. Mit längerer Akkulaufzeit können Sie den ganzen Tag Musik, Podcasts oder Anrufe genießen. Die Integration mit Apple-Geräten ist nahtlos und bietet automatische Koppelung und Siri-Unterstützung. Dank einem neuen, ergonomischen Design sitzen sie noch bequemer im Ohr. Perfekt für den Alltag, egal ob zu Hause, im Büro oder unterwegs.
+            Die AirPods 4 vereinen Stil und Funktionalität in einem schlanken Design. Die verbesserte Klangtechnologie
+            sorgt für satteren Sound und klare Stimmen. Mit längerer Akkulaufzeit können Sie den ganzen Tag Musik,
+            Podcasts oder Anrufe genießen. Die Integration mit Apple-Geräten ist nahtlos und bietet automatische
+            Koppelung und Siri-Unterstützung. Dank einem neuen, ergonomischen Design sitzen sie noch bequemer im Ohr.
+            Perfekt für den Alltag, egal ob zu Hause, im Büro oder unterwegs. <br><br> Preis 500 €
         </p>
     </div>
 </div>
@@ -55,7 +59,7 @@
     }
 
     // Optional: Hide the menu when clicking outside
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         const dropdownMenu = document.getElementById("dropdown-menu");
         const menuButton = document.querySelector('.menu-button');
 

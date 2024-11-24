@@ -20,39 +20,6 @@ body {
     padding: 1rem;
 }
 
-/* Darstellung für größere Bildschirme */
-@media (min-width: 768px) {
-    .product-list {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Drei Spalten */
-        gap: 1rem;
-    }
-}
-
-/* Darstellung für kleinere Bildschirme */
-@media (max-width: 767px) {
-    .product-list {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-    .nav-menu ul{
-        display: none; /* Navigation ausblenden */
-    }
-
-    .menu-button {
-        display: block; /* Hamburger-Menü anzeigen */
-    }
-
-    .dropdown-menu {
-        width: 100%;
-    }
-
-    .product-item {
-        font-size: 2rem;
-        padding: 20px;
-    }
-}
 
 img {
     max-width: 100%; /* Images scale down with container */
@@ -82,7 +49,7 @@ header {
     justify-content: center;
 }
 
-.nav-menu  li {
+.nav-menu li {
     display: inline;
     font-size: 14px;
     color: #242426;
@@ -90,28 +57,35 @@ header {
     text-decoration: none;
 }
 
-.nav-menu  a {
+.nav-menu a {
     font-size: 12px;
     color: #242426; /* Adjust text color */
     text-decoration: none;
     padding: 10px 0;
 }
 
-.nav-menu  a:hover {
+.nav-menu a:hover {
     color: #fff; /* Hover effect */
 }
 
 .product-list {
-    
+
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: bold;
     display: grid;
     gap: 1rem;
 }
 
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
 
 .product-item {
-    
+
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: bold;
     color: #242426;
@@ -120,6 +94,16 @@ header {
     flex: 1 1 calc(33.333% - 1rem);
     text-align: center;
     border: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    .nav-menu ul {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
 }
 
 @media (min-width: 768px) {
@@ -132,12 +116,30 @@ header {
       "item3 item4"
       "item5 item6";
     }
-    .product-item:nth-child(1) { grid-area: item1; }
-    .product-item:nth-child(2) { grid-area: item2; }
-    .product-item:nth-child(3) { grid-area: item3; }
-    .product-item:nth-child(4) { grid-area: item4; }
-    .product-item:nth-child(5) { grid-area: item5; }
-    .product-item:nth-child(6) { grid-area: item6; }
+
+    .product-item:nth-child(1) {
+        grid-area: item1;
+    }
+
+    .product-item:nth-child(2) {
+        grid-area: item2;
+    }
+
+    .product-item:nth-child(3) {
+        grid-area: item3;
+    }
+
+    .product-item:nth-child(4) {
+        grid-area: item4;
+    }
+
+    .product-item:nth-child(5) {
+        grid-area: item5;
+    }
+
+    .product-item:nth-child(6) {
+        grid-area: item6;
+    }
 }
 
 /* Darstellung für größere Bildschirme */
@@ -156,6 +158,7 @@ header {
         flex-direction: column;
         gap: 1rem;
     }
+
     .nav-menu ul {
         display: none; /* Hide the default navigation */
     }
@@ -180,37 +183,37 @@ img {
 }
 
 .BuyButton {
-    background-color:#3876e0;
-    border-radius:27px;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-size:17px;
-    padding:11px 31px;
-    text-decoration:none;
+    background-color: #3876e0;
+    border-radius: 27px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 11px 31px;
+    text-decoration: none;
 }
+
 .BuyButton:hover {
-    background-color:#3874bd;
+    background-color: #3874bd;
 }
 
 .LearnMore {
-    background-color:transparent;
-    border-radius:27px;
-    border:1px solid #2970db;
-    display:inline-block;
-    cursor:pointer;
-    font-size:17px;
-    padding:8px 20px;
+    background-color: transparent;
+    border-radius: 27px;
+    border: 1px solid #2970db;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 8px 20px;
     color: #2970db;
-    text-decoration:none;
+    text-decoration: none;
     transition: all 0.5s;
 }
+
 .LearnMore:hover {
     background-color: #2970db;
     color: white;
 }
-
-
 
 
 #iphone {
@@ -260,34 +263,31 @@ img {
     padding: 8px 20px; /* Adjust padding as needed */
 }
 
-/* Hide menu button on larger screens */
-.menu-button {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
+footer {
+    background-color: #242426;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
 }
 
 .dropdown-menu {
-    display: block; /* Keeps it in the DOM, but transforms it off-screen */
+    display: block;
     position: absolute;
-    background-color: #ffffff;
+    background-color: #fff;
     width: 100%;
     top: 60px;
     left: 0;
     z-index: 1000;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-100%); /* Move off-screen initially */
+    transform: translateY(-100%);
     opacity: 0;
     transition: all 0.3s ease-out;
-    visibility: hidden; /* Hide by default */
+    visibility: hidden;
 }
 
 .dropdown-menu.show {
-    transform: translateY(0); /* Slide in */
+    transform: translateY(0);
     opacity: 1;
-    visibility: visible; /* Make it visible */
+    visibility: visible;
 }
 
 .dropdown-menu a {
@@ -302,21 +302,44 @@ img {
     background-color: #ddd;
 }
 
-.menu-button {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
 
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
 
+.dropdown-content a:hover {
+    background-color: #fff;
+}
 
-footer {
-    background-color: #242426;
-    color: #ffffff;
-    padding: 1rem;
-    text-align: center;
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.dropbtn {
+    background-color: #fff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
 }
 

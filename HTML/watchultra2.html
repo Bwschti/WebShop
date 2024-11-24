@@ -2,9 +2,9 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Fake Apple Seite</title>
-    <link rel="stylesheet" href="../CSS/watchultra2.css">
+    <link href="../CSS/watchultra2.css" rel="stylesheet">
 </head>
 <body>
 
@@ -14,7 +14,7 @@
             <li><a href="iphone16.html">iPhone</a></li>
             <li><a href="Ipadprom4.html">iPad</a></li>
             <li><a href="MacBookPage.html">MacBook</a></li>
-            <li><a href="../../AppleWatches/AppleWatchUltra2/watchultra2.html">Watch</a></li>
+            <li><a href="watchultra2.html">Watch</a></li>
             <li><a href="AppletvPage.html">Apple TV</a></li>
             <li><a href="airpodspro2.html">AirPods</a></li>
             <li><a href="Kontakt.html">Kontakt</a></li>
@@ -22,7 +22,7 @@
         </ul>
         <button class="menu-button" onclick="toggleMenu()">☰</button>
     </nav>
-    <div id="dropdown-menu" class="dropdown-menu">
+    <div class="dropdown-menu" id="dropdown-menu">
         <a href="iphone16.html">iPhone</a>
         <a href="Ipadprom4.html">iPad</a>
         <a href="MacBookPage.html">MacBook</a>
@@ -34,18 +34,22 @@
     </div>
 </header>
 
-<div id="iphone" class="product-item">
+<div class="product-item" id="iphone">
     <div style="display: flex; justify-content: center; margin-top: 20px;">
-        <a href="applewatch10.html" class="LearnMore">Apple Watch 10</a>
-        <a href="../AppleWatchUltra2/watchultra2.html" class="LearnMore">Apple Watch Ultra 2</a>
+        <a class="LearnMore" href="applewatch10.html">Apple Watch 10</a>
+        <a class="LearnMore" href="watchultra2.html">Apple Watch Ultra 2</a>
     </div>
 
     Apple Watch Ultra 2
-    <img src="../Bilder/applewatchultra2.png" alt="Apple Watch Ultra 2">
+    <img alt="Apple Watch Ultra 2" src="../Bilder/applewatchultra2.png">
     <div class="text-container">
         <h2>Apple Watch Ultra 2</h2>
         <p>
-            Die Apple Watch Ultra 2 ist für Abenteurer gemacht, mit einem Titan-Gehäuse, das selbst den härtesten Bedingungen standhält. Sie bietet ein extrem helles Display, das auch bei direkter Sonneneinstrahlung gut lesbar ist. GPS mit Dual-Frequenz-Technologie sorgt für präzisere Ortung, egal wo Sie sind. Mit einer beeindruckenden Akkulaufzeit begleitet sie Sie bei längeren Expeditionen. Die Watch Ultra 2 ist wasserfest bis 100 Meter – perfekt für Taucher oder Outdoor-Enthusiasten.
+            Die Apple Watch Ultra 2 ist für Abenteurer gemacht, mit einem Titan-Gehäuse, das selbst den härtesten
+            Bedingungen standhält. Sie bietet ein extrem helles Display, das auch bei direkter Sonneneinstrahlung gut
+            lesbar ist. GPS mit Dual-Frequenz-Technologie sorgt für präzisere Ortung, egal wo Sie sind. Mit einer
+            beeindruckenden Akkulaufzeit begleitet sie Sie bei längeren Expeditionen. Die Watch Ultra 2 ist wasserfest
+            bis 100 Meter – perfekt für Taucher oder Outdoor-Enthusiasten. <br><br> Preis 800 €
         </p>
     </div>
 </div>
@@ -56,7 +60,7 @@
     }
 
     // Optional: Hide the menu when clicking outside
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         const dropdownMenu = document.getElementById("dropdown-menu");
         const menuButton = document.querySelector('.menu-button');
 
